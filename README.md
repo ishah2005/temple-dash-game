@@ -1,60 +1,90 @@
-# Temple Dash: Jungle Escape
+# Temple Dash: Jungle Escape 🏃🌴
 
 **Web Analytics — Homework 6**  
+**Student:** Ishfaq Shah  
 **Professor:** Apostolos Filippas  
-**Created by:** Ishfaq Shah
+**Built with:** HTML5, CSS, and JavaScript
 
-## About the game
-Temple Dash is a small, playable, Temple Run-style endless runner made with HTML5 Canvas, CSS, and vanilla JavaScript. Your goal is to run as far as possible, collect coins, and avoid obstacles. The runner starts at a faster pace (42 distance units/second) and accelerates up to 95 units/second, so each run gets more challenging.
+## Play the game
+
+🎮 **[Play Temple Dash online](https://ishah2005.github.io/temple-dash-game/)**
+
+> The online link works after GitHub Pages has been enabled. If the page is unavailable, follow the instructions under **Run locally** below.
+
+**[View the source code](https://github.com/ishah2005/temple-dash-game)**
+
+## Game overview
+
+Temple Dash: Jungle Escape is a fast-paced, Temple Run-inspired endless runner. The player runs down an ancient jungle path, switches between three lanes, jumps over obstacles, slides under branches, and collects gold coins. The goal is simple: **survive as long as possible and beat your high score**.
+
+The runner starts at **42 distance units per second** and gradually accelerates to a maximum of **95**, making each attempt more challenging.
 
 ## How to play
-- Move between three lanes to avoid obstacles.
-- **Stone blocks:** switch lanes or jump over them.
-- **Low branches:** switch lanes or slide underneath them.
-- **Holes:** switch lanes or jump over them.
-- **Gold coins:** run through them to collect them.
-- Score = 2 points per meter + 100 points per coin.
-- Try to beat your personal best, saved to your browser using localStorage.
 
-### Controls
-| Action | Desktop | Mobile |
-|---|---|---|
-| Move left/right | Left/Right arrow or A/D | Swipe left/right or tap ◀/▶ |
-| Jump | Up arrow, W or Space | Swipe up, tap screen or tap ▲ |
+1. Press **START RUNNING**.
+2. Move between the three lanes to avoid incoming hazards.
+3. **Jump** over stone blocks and gaps; **slide** under low branches.
+4. Collect coins to increase your score.
+5. When you crash, view your results and press **Play Again** to try to beat your personal best.
+
+**Scoring:** 2 points per distance unit traveled, plus 100 points for each collected coin. High scores are saved in the browser on the same device.
+
+## Controls
+
+| Action | Keyboard | Phone / tablet |
+| --- | --- | --- |
+| Move left | Left arrow or A | Swipe left or tap ◀ |
+| Move right | Right arrow or D | Swipe right or tap ▶ |
+| Jump | Up arrow, W, or Space | Swipe up or tap ▲ |
 | Slide | Down arrow or S | Swipe down or tap ▼ |
-| Pause/resume | P, Escape, or on-screen pause | On-screen pause |
-| Restart after ending | R or Play Again | Play Again |
-| Mute/unmute | Sound toggle | Sound toggle |
+| Pause / resume | P, Escape, or pause button | Pause button |
+| Restart after a crash | R or Play Again | Play Again |
+| Sound on / off | On-screen sound toggle | On-screen sound toggle |
 
-## Run it locally
-1. Download or clone this repository.
-2. Open **index.html** in Chrome, Safari, Firefox, or Edge.
-3. Click **START RUNNING**.
+## Game features
 
-No packages, server, build tools, or internet connection are required. Sounds are generated in the browser using the Web Audio API; all visuals are drawn with Canvas, so there are no external asset dependencies.
+- Three-lane jungle running with a pseudo-3D perspective
+- Jumping, sliding, and lane-switching
+- Stone blocks, low branches, and holes
+- Collectible gold coins and score tracking
+- Increasing running speed and procedurally generated hazards
+- Sound effects and animated visual effects
+- Personal-best score saved using browser local storage
+- Game-over screen with instant replay
+- Desktop keyboard controls and mobile touch controls
 
-## Publish on GitHub Pages
-1. Sign in to GitHub and create a new repository, such as `temple-dash`.
-2. Upload `index.html` and `README.md` to the root of the repository. Commit the files.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose branch **main**, folder **/(root)**, and click **Save**.
-6. Once deployment finishes, the game should be available at `https://YOUR-USERNAME.github.io/temple-dash/` (replace YOUR-USERNAME with your actual GitHub username).
-7. Open that link in a browser and play-test it.
-8. Paste your real live link in this README:
+## Run locally
 
-**Playable game:** _Add your published link here_
+1. On this repository, select **Code → Download ZIP**.
+2. Unzip the downloaded folder.
+3. Open **index.html** in a modern web browser (Chrome, Safari, Firefox, or Edge).
+4. Press **START RUNNING** to play.
 
-## Homework 6 submission checklist
-- [ ] Code and README are in a GitHub repository.
-- [ ] Game starts, player moves, jumps, slides, collects coins, and can restart.
-- [ ] Test on desktop and, if possible, a phone.
-- [ ] Confirm the published GitHub Pages URL opens and runs.
-- [ ] Invite **@apostolosfilippas** as a GitHub repository collaborator (Settings → Collaborators).
-- [ ] Submit your **GitHub repository link** for Homework 6.
+No additional packages, Python installation, command line, or development server are needed. The game is self-contained in `index.html`; graphics are drawn with HTML5 Canvas, and audio is generated in the browser.
 
-## Technical notes
-- Single-page HTML/CSS/JavaScript game; HTML5 Canvas for rendering, `requestAnimationFrame` for the game loop.
-- Three-lane pseudo-3D perspective, procedural obstacle generation, increasing difficulty, collision detection, coin collection, particles, generated sounds, and high-score persistence.
-- The game pauses when the browser tab becomes hidden.
-- Faster edition: starting speed increased from 17 to 24, maximum speed from 36 to 52; obstacle spacing adjusted to preserve reaction time.
+## GitHub Pages setup
+
+The repository already contains the required `index.html` at its root. To publish the game:
+
+1. Go to [this repository's Pages settings](https://github.com/ishah2005/temple-dash-game/settings/pages).
+2. Under **Build and deployment**, select **Deploy from a branch**.
+3. Select branch **main** and folder **/(root)**, then click **Save**.
+4. After GitHub finishes deploying, open [the live game](https://ishah2005.github.io/temple-dash-game/) and test the controls.
+
+## Homework 6 submission
+
+**Repository to submit:** https://github.com/ishah2005/temple-dash-game
+
+Before submitting:
+
+- [ ] Open the game and confirm it starts, moves, jumps, slides, and restarts.
+- [ ] Check that the coin counter, score, and high score work correctly.
+- [ ] Enable GitHub Pages and verify the playable link above.
+- [ ] Invite **[@apostolosfilippas](https://github.com/apostolosfilippas)** as a repository collaborator using **Settings → Collaborators**.
+- [ ] Submit the repository URL on Blackboard.
+
+## Technical details
+
+The game uses HTML5 Canvas for rendering, JavaScript and `requestAnimationFrame` for animation and game logic, procedural hazard spawning, collision checks, Web Audio API sounds, and `localStorage` for the high score. It also pauses when the browser tab is hidden.
+
+This project was created for **Fordham University's Web Analytics Homework 6**.
