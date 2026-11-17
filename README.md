@@ -5,7 +5,7 @@
 **Created by:** Ishfaq Shah
 
 ## About the game
-Temple Dash is a small, playable, Temple Run-style endless runner made with HTML5 Canvas, CSS, and vanilla JavaScript. Your goal is to run as far as possible, collect coins, and avoid obstacles. The runner starts at a faster pace (24 distance units/second) and accelerates up to 52 units/second, so each run gets more challenging.
+Temple Dash is a small, playable, Temple Run-style endless runner made with HTML5 Canvas, CSS, and vanilla JavaScript. Your goal is to run as far as possible, collect coins, and avoid obstacles. The runner starts at a faster pace (42 distance units/second) and accelerates up to 95 units/second, so each run gets more challenging.
 
 ## How to play
 - Move between three lanes to avoid obstacles.
